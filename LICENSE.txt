@@ -1,0 +1,2 @@
+License agreement on use of Yandex AppMetrica Push SDK is available at:
+https://yandex.com/legal/metrica_termsofuse/
