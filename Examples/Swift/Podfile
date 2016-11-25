@@ -1,6 +1,12 @@
 
 platform :ios, '7.0'
-use_frameworks!
+# use_frameworks!
+
+### For dynamic frameworks use:
+#
+#   pod 'YandexMobileMetrica/Dynamic'
+#   pod 'YandexMobileMetricaPush/Dynamic'
+#
 
 target 'YandexMobileMetricaPushSampleSwift' do
 

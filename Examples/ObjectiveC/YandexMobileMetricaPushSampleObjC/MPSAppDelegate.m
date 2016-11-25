@@ -11,6 +11,8 @@
 
 #import "MPSAppDelegate.h"
 
+#import <UserNotifications/UserNotifications.h> // iOS 10
+
 #import <YandexMobileMetrica/YandexMobileMetrica.h>
 #import <YandexMobileMetricaPush/YandexMobileMetricaPush.h>
 
@@ -30,7 +32,46 @@
     // Track remote notification from application launch options.
     // Method [YMMYandexMetrica activateWithApiKey:] should be called before using this method.
     [YMPYandexMetricaPush handleApplicationDidFinishLaunchingWithOptions:launchOptions];
+
+    [self registerForPushNotificationsWithApplication:application];
     return YES;
+}
+
+- (void)registerForPushNotificationsWithApplication:(UIApplication *)application
+{
+    // Register for push notifications
+    if ([application respondsToSelector:@selector(registerForRemoteNotifications)]) {
+        if (NSClassFromString(@"UNUserNotificationCenter") != Nil) {
+            // iOS 10.0 and above
+            UNAuthorizationOptions options =
+                UNAuthorizationOptionAlert |
+                UNAuthorizationOptionBadge |
+                UNAuthorizationOptionSound;
+            UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+            [center requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError *error) {
+                // Enable or disable features based on authorization.
+            }];
+        }
+        else {
+            // iOS 8 and iOS 9
+            UIUserNotificationType userNotificationTypes =
+                UIUserNotificationTypeAlert |
+                UIUserNotificationTypeBadge |
+                UIUserNotificationTypeSound;
+            UIUserNotificationSettings *settings =
+                [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
+            [application registerUserNotificationSettings:settings];
+        }
+        [application registerForRemoteNotifications];
+    }
+    else {
+        // iOS 7
+        UIRemoteNotificationType notificationTypes =
+            UIRemoteNotificationTypeBadge |
+            UIRemoteNotificationTypeSound |
+            UIRemoteNotificationTypeAlert;
+        [application registerForRemoteNotificationTypes:notificationTypes];
+    }
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken

@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import UserNotifications // iOS 10
 
 import YandexMobileMetrica
 import YandexMobileMetricaPush
@@ -33,7 +34,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Track remote notification from application launch options.
         // Method [YMMYandexMetrica activateWithApiKey:] should be called before using this method.
         YMPYandexMetricaPush.handleApplicationDidFinishLaunching(options: launchOptions)
+
+        self.registerForPushNotificationsWithApplication(application)
         return true
+    }
+
+    func registerForPushNotificationsWithApplication(_ application: UIApplication)
+    {
+        // Register for push notifications
+        if #available(iOS 8.0, *) {
+            if #available(iOS 10.0, *) {
+                // iOS 10.0 and above
+                let center = UNUserNotificationCenter.current()
+                center.requestAuthorization(options:[.badge, .alert, .sound]) { (granted, error) in
+                    // Enable or disable features based on authorization.
+                }
+            } else {
+                // iOS 8 and iOS 9
+                let settings = UIUserNotificationSettings(types: [.badge, .alert, .sound], categories: nil)
+                application.registerUserNotificationSettings(settings)
+            }
+            application.registerForRemoteNotifications()
+        } else {
+            // iOS 7
+            application.registerForRemoteNotifications(matching: [.badge, .alert, .sound])
+        }
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)
