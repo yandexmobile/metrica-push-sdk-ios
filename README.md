@@ -1,13 +1,13 @@
 # Yandex AppMetrica Push SDK
 
 ## License
-License agreement on use of Yandex AppMetrica Push SDK is available at [EULA site] [LICENSE].
+License agreement on use of Yandex AppMetrica Push SDK is available at [EULA site][LICENSE].
 
 ## Documentation
-Documentation could be found at [Yandex Technologies official site] [DOCUMENTATION].
+Documentation could be found at [Yandex Technologies official site][DOCUMENTATION].
 
 ## Sample
-Sample projects to use is available at [GitHub] [GitHubSAMPLE].
+Sample projects to use is available at [GitHub][GitHubSAMPLE].
 
 [LICENSE]: https://yandex.com/legal/metrica_termsofuse/ "Yandex AppMetrica agreement"
 [DOCUMENTATION]: https://tech.yandex.com/metrica-mobile-sdk/ "Yandex AppMetrica documentation"
