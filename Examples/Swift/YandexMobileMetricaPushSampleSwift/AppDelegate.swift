@@ -20,17 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    override class func initialize()
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool
     {
-        if self === AppDelegate.self {
-            // Replace API_KEY with your unique API key. Please, read official documentation how to obtain one:
-            // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/swift-quickstart-docpage/
-            YMMYandexMetrica.activate(withApiKey: "API_KEY")
-        }
-    }
+        // Replace API_KEY with your unique API key. Please, read official documentation to find out how to obtain one:
+        // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/swift-quickstart-docpage/
+        YMMYandexMetrica.activate(withApiKey: "API_KEY")
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {
         // Track remote notification from application launch options.
         // Method [YMMYandexMetrica activateWithApiKey:] should be called before using this method.
         YMPYandexMetricaPush.handleApplicationDidFinishLaunching(options: launchOptions)
@@ -82,12 +77,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func handlePushNotification(_ userInfo: [AnyHashable : Any])
     {
         // Track received remote notification.
-        // Method [YMMYandexMetrica activateWithApiKey:] should be called before using this method.
+        // Method YMMYandexMetrica.activate should be called before using this method.
         YMPYandexMetricaPush.handleRemoteNotification(userInfo)
 
         // Get user data from remote notification.
         let userData = YMPYandexMetricaPush.userData(forNotification: userInfo)
-        print("User Data: %@", userData)
+        print("User Data: %@", userData?.description ?? "[no data]")
     }
 
 }

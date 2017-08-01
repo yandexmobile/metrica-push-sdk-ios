@@ -21,7 +21,7 @@
 + (void)initialize
 {
     if ([self class] == [MPSAppDelegate class]) {
-        // Replace API_KEY with your unique API key. Please, read official documentation how to obtain one:
+        // Replace API_KEY with your unique API key. Please, read official documentation to find out how to obtain one:
         // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/
         [YMMYandexMetrica activateWithApiKey:@"API_KEY"];
     }
