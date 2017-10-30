@@ -3,7 +3,7 @@
 //
 //  This file is a part of the AppMetrica
 //
-//  Version for iOS © 2016 YANDEX
+//  Version for iOS © 2017 YANDEX
 //
 //  You may not use this file except in compliance with the License.
 //  You may obtain a copy of the License at https://yandex.com/legal/metrica_termsofuse/
@@ -26,8 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/swift-quickstart-docpage/
         YMMYandexMetrica.activate(withApiKey: "API_KEY")
 
+        // Enable in-app push notifications handling in iOS 10
+        if #available(iOS 10.0, *) {
+            let delegate = YMPYandexMetricaPush.userNotificationCenterDelegate()
+            // You can add this delegate as a middleware before your own delegate:
+            // delegate.nextDelegate = ownDelegate
+            UNUserNotificationCenter.current().delegate = delegate
+        }
+
         // Track remote notification from application launch options.
-        // Method [YMMYandexMetrica activateWithApiKey:] should be called before using this method.
+        // Method YMMYandexMetrica.activate should be called before using this method.
         YMPYandexMetricaPush.handleApplicationDidFinishLaunching(options: launchOptions)
 
         self.registerForPushNotificationsWithApplication(application)
@@ -58,9 +66,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)
     {
-        // Send device token to AppMetrica Push server.
-        // Method [YMMYandexMetrica activateWithApiKey:] has to be called before using this method.
-        YMPYandexMetricaPush.setDeviceTokenFrom(deviceToken)
+        // Send device token and APNs environment(based on default build configuration) to AppMetrica Push server.
+        // Method YMMYandexMetrica.activate has to be called before using this method.
+#if DEBUG
+        let pushEnvironment = YMPYandexMetricaPushEnvironment.development
+#else
+        let pushEnvironment = YMPYandexMetricaPushEnvironment.production
+#endif
+        YMPYandexMetricaPush.setDeviceTokenFrom(deviceToken, pushEnvironment: pushEnvironment)
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any])
@@ -80,9 +93,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Method YMMYandexMetrica.activate should be called before using this method.
         YMPYandexMetricaPush.handleRemoteNotification(userInfo)
 
-        // Get user data from remote notification.
-        let userData = YMPYandexMetricaPush.userData(forNotification: userInfo)
-        print("User Data: %@", userData?.description ?? "[no data]")
+        // Check if notification is related to AppMetrica (optionally)
+        if YMPYandexMetricaPush.isNotificationRelated(toSDK: userInfo) {
+            // Get user data from remote notification.
+            let userData = YMPYandexMetricaPush.userData(forNotification: userInfo)
+            print("User Data: %@", userData?.description ?? "[no data]")
+        } else {
+            print("Push is not related to AppMetrica")
+        }
     }
 
 }
