@@ -9,6 +9,7 @@ Documentation could be found at [Yandex Technologies official site][DOCUMENTATIO
 ## Sample
 Sample projects to use are available at [GitHub][GitHubSAMPLE].
 
-[LICENSE]: https://yandex.com/legal/metrica_termsofuse/ "Yandex AppMetrica agreement"
+[LICENSE]: https://yandex.com/legal/appmetrica_sdk_agreement/ "Yandex AppMetrica SDK License Agreement"
 [DOCUMENTATION]: https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/concepts/push-about-docpage/ "Yandex AppMetrica Push documentation"
-[GitHubSAMPLE]: https://github.com/yandexmobile/metrica-push-sdk-ios/tree/master/Examples "Yandex AppMetrica Push sample applications"
+[GitHubSAMPLE]: https://github.com/yandexmobile/metrica-push-sdk-ios/tree/master/Examples "Yandex AppMetrica Push samples applications"
+
