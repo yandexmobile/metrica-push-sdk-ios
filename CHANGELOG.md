@@ -1,5 +1,11 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 0.5.1
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/117488/YandexMobileMetricaPush-0.5.1-ios-acb81a52-6f82-486c-97f1-79c6ee030f81.zip)
+
+* Fixed crash when opening URL from push notification
+* Fixed double URL opening from push notification
+
 ## Version 0.5.0
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetricaPush-0.5.0-ios-e53d133c-7449-4c0a-b71e-218bdd08dc18.zip)
 
