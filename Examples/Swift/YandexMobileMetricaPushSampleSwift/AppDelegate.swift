@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         // Replace API_KEY with your unique API key. Please, read official documentation to find out how to obtain one:
         // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/swift-quickstart-docpage/
-        YMMYandexMetrica.activate(withApiKey: "API_KEY")
+        YMMYandexMetrica.activate(with: YMMYandexMetricaConfiguration(apiKey: "API_KEY")!)
 
         // Enable in-app push notifications handling in iOS 10
         if #available(iOS 10.0, *) {
