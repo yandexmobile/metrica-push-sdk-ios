@@ -22,7 +22,7 @@
 {
     // Replace API_KEY with your unique API key. Please, read official documentation to find out how to obtain one:
     // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/
-    [YMMYandexMetrica activateWithApiKey:@"API_KEY"];
+    [YMMYandexMetrica activateWithConfiguration:[[YMMYandexMetricaConfiguration alloc] initWithApiKey:@"API_KEY"]];
 
     // Enable in-app push notifications handling in iOS 10
     if ([UNUserNotificationCenter class] != Nil) {
