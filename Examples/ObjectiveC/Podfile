@@ -7,3 +7,9 @@ target 'YandexMobileMetricaPushSampleObjC' do
     pod 'YandexMobileMetricaPush'
 
 end
+
+target 'YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC' do
+
+    pod 'YandexMobileMetricaPush'
+
+end
