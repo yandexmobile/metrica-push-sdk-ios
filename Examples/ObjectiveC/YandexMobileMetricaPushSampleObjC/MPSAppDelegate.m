@@ -23,6 +23,7 @@
     // Replace API_KEY with your unique API key. Please, read official documentation to find out how to obtain one:
     // https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/
     [YMMYandexMetrica activateWithConfiguration:[[YMMYandexMetricaConfiguration alloc] initWithApiKey:@"API_KEY"]];
+    [YMPYandexMetricaPush setExtensionAppGroup:@"EXTENSION_AND_APP_SHARED_APP_GROUP_NAME"];
 
     // Enable in-app push notifications handling in iOS 10
     if ([UNUserNotificationCenter class] != Nil) {
@@ -51,6 +52,13 @@
                 UNAuthorizationOptionBadge |
                 UNAuthorizationOptionSound;
             UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+            UNNotificationCategory *category = [UNNotificationCategory
+                                                categoryWithIdentifier:@"Custom category"
+                                                actions:@[]
+                                                intentIdentifiers:@[]
+                                                options:UNNotificationCategoryOptionCustomDismissAction];
+            // Only for push notifications of this category dismiss action will be tracked.
+            [center setNotificationCategories:[NSSet setWithObject:category]];
             [center requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError *error) {
                 // Enable or disable features based on authorization.
             }];

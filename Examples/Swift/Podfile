@@ -14,3 +14,9 @@ target 'YandexMobileMetricaPushSampleSwift' do
     pod 'YandexMobileMetricaPush'
 
 end
+
+target 'YandexMobileMetricaPushNotificationServiceExtenstionSampleSwift' do
+
+    pod 'YandexMobileMetricaPush'
+
+end

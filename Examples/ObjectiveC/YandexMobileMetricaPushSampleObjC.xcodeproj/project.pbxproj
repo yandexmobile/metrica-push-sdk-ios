@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBA77F2213D319200CC1866 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA77F1213D319200CC1866 /* NotificationService.m */; };
+		3FBA77F6213D319200CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3FBA77EE213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		414D6BCA1DABA8B40002EEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 414D6BC91DABA8B40002EEDB /* main.m */; };
 		414D6BCD1DABA8B40002EEDB /* MPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 414D6BCC1DABA8B40002EEDB /* MPSAppDelegate.m */; };
 		414D6BD01DABA8B40002EEDB /* MPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414D6BCF1DABA8B40002EEDB /* MPSViewController.m */; };
@@ -15,9 +17,39 @@
 		414D6BD81DABA8B40002EEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414D6BD61DABA8B40002EEDB /* LaunchScreen.storyboard */; };
 		41C8DF661DABAF6B002CF78D /* YandexMobileMetricaPushSampleObjC.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 41C8DF651DABAF6B002CF78D /* YandexMobileMetricaPushSampleObjC.entitlements */; };
 		454BD3474BA3EAD83D41F774 /* libPods-YandexMobileMetricaPushSampleObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C3FF4C0BA7724DC709E3B2 /* libPods-YandexMobileMetricaPushSampleObjC.a */; };
+		958F3D12A6B9BE77FAEB35C5 /* libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE71CB102922149B141199A /* libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3FBA77F4213D319200CC1866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 414D6BBD1DABA8B40002EEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBA77ED213D319100CC1866;
+			remoteInfo = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FBA77FA213D319200CC1866 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3FBA77F6213D319200CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0DE71CB102922149B141199A /* libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBA77EE213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBA77F0213D319200CC1866 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		3FBA77F1213D319200CC1866 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		3FBA77F3213D319200CC1866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		414D6BC51DABA8B40002EEDB /* YandexMobileMetricaPushSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMobileMetricaPushSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414D6BC91DABA8B40002EEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		414D6BCB1DABA8B40002EEDB /* MPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSAppDelegate.h; sourceTree = "<group>"; };
@@ -32,9 +64,19 @@
 		70505DC2F23AAFE0B52DE1FE /* Pods-YandexMobileMetricaPushSampleObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMobileMetricaPushSampleObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC.release.xcconfig"; sourceTree = "<group>"; };
 		81C3FF4C0BA7724DC709E3B2 /* libPods-YandexMobileMetricaPushSampleObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YandexMobileMetricaPushSampleObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3CFB6C37DB1493AC7D05FB /* Pods-YandexMobileMetricaPushSampleObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMobileMetricaPushSampleObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		A63F54803626821490FB45A7 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.release.xcconfig"; sourceTree = "<group>"; };
+		F4CEFB5F28DDAF82CB2345A5 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FBA77EB213D319100CC1866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958F3D12A6B9BE77FAEB35C5 /* libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		414D6BC21DABA8B40002EEDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FBA77EF213D319200CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC */ = {
+			isa = PBXGroup;
+			children = (
+				3FBA77F0213D319200CC1866 /* NotificationService.h */,
+				3FBA77F1213D319200CC1866 /* NotificationService.m */,
+				3FBA77F3213D319200CC1866 /* Info.plist */,
+			);
+			path = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC;
+			sourceTree = "<group>";
+		};
 		414D6BBC1DABA8B40002EEDB = {
 			isa = PBXGroup;
 			children = (
 				414D6BC71DABA8B40002EEDB /* YandexMobileMetricaPushSampleObjC */,
+				3FBA77EF213D319200CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC */,
 				414D6BC61DABA8B40002EEDB /* Products */,
 				9CBC7B7CF063F58104C1D4AE /* Pods */,
 				E17B3E1ED293861381433EBE /* Frameworks */,
@@ -60,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				414D6BC51DABA8B40002EEDB /* YandexMobileMetricaPushSampleObjC.app */,
+				3FBA77EE213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +148,8 @@
 			children = (
 				8A3CFB6C37DB1493AC7D05FB /* Pods-YandexMobileMetricaPushSampleObjC.debug.xcconfig */,
 				70505DC2F23AAFE0B52DE1FE /* Pods-YandexMobileMetricaPushSampleObjC.release.xcconfig */,
+				F4CEFB5F28DDAF82CB2345A5 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.debug.xcconfig */,
+				A63F54803626821490FB45A7 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				81C3FF4C0BA7724DC709E3B2 /* libPods-YandexMobileMetricaPushSampleObjC.a */,
+				0DE71CB102922149B141199A /* libPods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +166,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3FBA77ED213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBA77F9213D319200CC1866 /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC" */;
+			buildPhases = (
+				FCE5F3E0454B3D5E58DFA367 /* [CP] Check Pods Manifest.lock */,
+				3FBA77EA213D319100CC1866 /* Sources */,
+				3FBA77EB213D319100CC1866 /* Frameworks */,
+				3FBA77EC213D319100CC1866 /* Resources */,
+				8FC4642E2DD80D408DBA247E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC;
+			productName = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC;
+			productReference = 3FBA77EE213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		414D6BC41DABA8B40002EEDB /* YandexMobileMetricaPushSampleObjC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 414D6BDC1DABA8B40002EEDB /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushSampleObjC" */;
@@ -119,10 +195,12 @@
 				414D6BC31DABA8B40002EEDB /* Resources */,
 				D07F6CC6B7F79C995A635047 /* [CP] Embed Pods Frameworks */,
 				88143AA7D21C5CB18931EAA5 /* [CP] Copy Pods Resources */,
+				3FBA77FA213D319200CC1866 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3FBA77F5213D319200CC1866 /* PBXTargetDependency */,
 			);
 			name = YandexMobileMetricaPushSampleObjC;
 			productName = YandexMobileMetricaPushSampleObjC;
@@ -139,6 +217,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Yandex, LLC";
 				TargetAttributes = {
+					3FBA77ED213D319100CC1866 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					414D6BC41DABA8B40002EEDB = {
 						CreatedOnToolsVersion = 7.3.1;
 						SystemCapabilities = {
@@ -163,11 +245,19 @@
 			projectRoot = "";
 			targets = (
 				414D6BC41DABA8B40002EEDB /* YandexMobileMetricaPushSampleObjC */,
+				3FBA77ED213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3FBA77EC213D319100CC1866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		414D6BC31DABA8B40002EEDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +305,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8FC4642E2DD80D408DBA247E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D07F6CC6B7F79C995A635047 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,9 +335,35 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FCE5F3E0454B3D5E58DFA367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3FBA77EA213D319100CC1866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBA77F2213D319200CC1866 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		414D6BC11DABA8B40002EEDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +375,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBA77F5213D319200CC1866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBA77ED213D319100CC1866 /* YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC */;
+			targetProxy = 3FBA77F4213D319200CC1866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		414D6BD11DABA8B40002EEDB /* Main.storyboard */ = {
@@ -265,6 +404,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3FBA77F7213D319200CC1866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4CEFB5F28DDAF82CB2345A5 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-objc.YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FBA77F8213D319200CC1866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A63F54803626821490FB45A7 /* Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-objc.YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		414D6BDA1DABA8B40002EEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YandexMobileMetricaPushSampleObjC/YandexMobileMetricaPushSampleObjC.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YandexMobileMetricaPushSampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-objc";
@@ -384,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YandexMobileMetricaPushSampleObjC/YandexMobileMetricaPushSampleObjC.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YandexMobileMetricaPushSampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-objc";
@@ -394,6 +577,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3FBA77F9213D319200CC1866 /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBA77F7213D319200CC1866 /* Debug */,
+				3FBA77F8213D319200CC1866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		414D6BC01DABA8B40002EEDB /* Build configuration list for PBXProject "YandexMobileMetricaPushSampleObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
