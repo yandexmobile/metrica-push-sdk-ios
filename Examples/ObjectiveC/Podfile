@@ -3,7 +3,7 @@ platform :ios, '8.0'
 
 target 'YandexMobileMetricaPushSampleObjC' do
 
-    pod 'YandexMobileMetrica'
+    pod 'YandexMobileMetrica/Static/Core', '~> 3.4'
     pod 'YandexMobileMetricaPush'
 
 end

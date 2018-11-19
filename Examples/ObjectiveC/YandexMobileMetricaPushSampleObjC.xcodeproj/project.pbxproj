@@ -174,7 +174,6 @@
 				3FBA77EA213D319100CC1866 /* Sources */,
 				3FBA77EB213D319100CC1866 /* Frameworks */,
 				3FBA77EC213D319100CC1866 /* Resources */,
-				8FC4642E2DD80D408DBA247E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +192,6 @@
 				414D6BC11DABA8B40002EEDB /* Sources */,
 				414D6BC21DABA8B40002EEDB /* Frameworks */,
 				414D6BC31DABA8B40002EEDB /* Resources */,
-				D07F6CC6B7F79C995A635047 /* [CP] Embed Pods Frameworks */,
-				88143AA7D21C5CB18931EAA5 /* [CP] Copy Pods Resources */,
 				3FBA77FA213D319200CC1866 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -288,51 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88143AA7D21C5CB18931EAA5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FC4642E2DD80D408DBA247E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC/Pods-YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D07F6CC6B7F79C995A635047 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexMobileMetricaPushSampleObjC/Pods-YandexMobileMetricaPushSampleObjC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FCE5F3E0454B3D5E58DFA367 /* [CP] Check Pods Manifest.lock */ = {

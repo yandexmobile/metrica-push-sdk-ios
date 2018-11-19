@@ -1,20 +1,30 @@
 PODS:
-  - YandexMobileMetrica (3.2.0):
-    - YandexMobileMetrica/Static (= 3.2.0)
-  - YandexMobileMetrica/Static (3.2.0)
+  - YandexMobileMetrica (3.4.1):
+    - YandexMobileMetrica/Static (= 3.4.1)
+  - YandexMobileMetrica/Static (3.4.1):
+    - YandexMobileMetrica/Static/Core (= 3.4.1)
+    - YandexMobileMetrica/Static/Crashes (= 3.4.1)
+  - YandexMobileMetrica/Static/Core (3.4.1)
+  - YandexMobileMetrica/Static/Crashes (3.4.1):
+    - YandexMobileMetrica/Static/Core
   - YandexMobileMetricaPush (0.7.0):
     - YandexMobileMetricaPush/Static (= 0.7.0)
   - YandexMobileMetricaPush/Static (0.7.0):
     - YandexMobileMetrica (~> 3.0)
 
 DEPENDENCIES:
-  - YandexMobileMetrica
+  - YandexMobileMetrica/Static/Core (~> 3.4)
   - YandexMobileMetricaPush
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YandexMobileMetrica
+    - YandexMobileMetricaPush
+
 SPEC CHECKSUMS:
-  YandexMobileMetrica: f18374ee6977a4cd1d0a86298a0df4ad7baf4135
+  YandexMobileMetrica: d8ec43deba7da831e7d3d4281e690068f67d42a8
   YandexMobileMetricaPush: 43d7c6bbaeee637418a8d3c287af93df1fb512d5
 
-PODFILE CHECKSUM: 77beec3b141cf23c0e068dd9c985355b5e453991
+PODFILE CHECKSUM: 6252968d6cef99f01013aafa4e110130a667cffa
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
