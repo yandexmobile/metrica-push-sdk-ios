@@ -1,5 +1,10 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 0.7.2
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-0.7.2-ios-c995c336-b8ef-4127-8582-95d104fa6aa3.zip)
+
+* Fixed dynamic framework
+
 ## Version 0.7.1
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/128534/YandexMobileMetricaPush-0.7.1-ios-f66a77cc-28fd-4961-becb-eb5cf9480512.zip)
 
