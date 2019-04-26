@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let delegate = YMPYandexMetricaPush.userNotificationCenterDelegate()
             // You can add this delegate as a middleware before your own delegate:
             // delegate.nextDelegate = ownDelegate
+            // or call methods of YMPYandexMetricaPush.userNotificationCenterHandler() from yours
             UNUserNotificationCenter.current().delegate = delegate
         }
 

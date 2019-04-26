@@ -1,5 +1,10 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 0.8.0
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-0.8.0-ios-076122fd-824a-4ccf-8006-7c61145d8475.zip)
+
+* Added the API for manual push tracking with the custom UNUserNotificationCenterDelegate implementation
+
 ## Version 0.7.2
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-0.7.2-ios-c995c336-b8ef-4127-8582-95d104fa6aa3.zip)
 
@@ -34,7 +39,7 @@ SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetricaPush-0.5.0-ios-e53d133c-7449-4c0a-b71e-218bdd08dc18.zip)
 
 * Supported iOS 10+ in-app notifications.
-* Added method for identification of push notifications related to AppMetrica Push SDK.
+* Added method for identification push notifications related to AppMetrica Push SDK.
 * Added method for sending APNs environment with device token.
 
 ## Version 0.4.0

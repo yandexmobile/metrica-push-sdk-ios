@@ -30,6 +30,7 @@
         id<YMPUserNotificationCenterDelegate> delegate = [YMPYandexMetricaPush userNotificationCenterDelegate];
         // You can add this delegate as a middleware before your own delegate:
         // delegate.nextDelegate = ownDelegate;
+        // or call methods of [YMPYandexMetricaPush userNotificationCenterHandler] from yours
         [UNUserNotificationCenter currentNotificationCenter].delegate = delegate;
     }
 
