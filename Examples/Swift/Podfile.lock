@@ -1,15 +1,15 @@
 PODS:
-  - YandexMobileMetrica (3.6.0):
-    - YandexMobileMetrica/Static (= 3.6.0)
-  - YandexMobileMetrica/Static (3.6.0):
-    - YandexMobileMetrica/Static/Core (= 3.6.0)
-    - YandexMobileMetrica/Static/Crashes (= 3.6.0)
-  - YandexMobileMetrica/Static/Core (3.6.0)
-  - YandexMobileMetrica/Static/Crashes (3.6.0):
+  - YandexMobileMetrica (3.12.0):
+    - YandexMobileMetrica/Static (= 3.12.0)
+  - YandexMobileMetrica/Static (3.12.0):
+    - YandexMobileMetrica/Static/Core (= 3.12.0)
+    - YandexMobileMetrica/Static/Crashes (= 3.12.0)
+  - YandexMobileMetrica/Static/Core (3.12.0)
+  - YandexMobileMetrica/Static/Crashes (3.12.0):
     - YandexMobileMetrica/Static/Core
-  - YandexMobileMetricaPush (0.8.0):
-    - YandexMobileMetricaPush/Static (= 0.8.0)
-  - YandexMobileMetricaPush/Static (0.8.0):
+  - YandexMobileMetricaPush (0.9.2):
+    - YandexMobileMetricaPush/Static (= 0.9.2)
+  - YandexMobileMetricaPush/Static (0.9.2):
     - YandexMobileMetrica/Static/Core (~> 3.4)
 
 DEPENDENCIES:
@@ -17,14 +17,14 @@ DEPENDENCIES:
   - YandexMobileMetricaPush
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - YandexMobileMetrica
     - YandexMobileMetricaPush
 
 SPEC CHECKSUMS:
-  YandexMobileMetrica: 11eee6732831a44aea2d81e3ae8626b5b0e129c5
-  YandexMobileMetricaPush: ff5d6fc46d3987f44e9fac8b9cb2f776b638cd04
+  YandexMobileMetrica: 7ba67267e1ef841f77d5db17a5091b8e9eba911f
+  YandexMobileMetricaPush: 24be267106a411bdea54ebd2e7c5dbe0afd86191
 
 PODFILE CHECKSUM: f9da7488825ef27c841a34025558063b0af4edf9
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.1

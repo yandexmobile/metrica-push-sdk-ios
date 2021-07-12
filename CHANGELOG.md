@@ -1,5 +1,10 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 0.9.2
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/175948/YandexMobileMetricaPush-0.9.2-ios-d8224e1b-10ac-4bdc-8c1b-498370d10714.zip)
+
+* Added the API for downloading attachments
+
 ## Version 0.8.0
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-0.8.0-ios-076122fd-824a-4ccf-8006-7c61145d8475.zip)
 
