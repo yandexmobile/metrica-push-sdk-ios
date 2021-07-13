@@ -1,5 +1,15 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 1.0.0
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/128534/YandexMobileMetricaPush-1.0.0-ios-11df8ee2-df87-4f7f-a7b1-1c0718953680.zip)
+
+* Added support for iPhone and AppleTV simulators running on Apple Silicon Macs (M1)
+* Added Swift Package Manager distribution.
+* Stopped supporting iOS 8.
+
+#### Notice
+> CocoaPods 1.10 or Carthage 0.38 now required for `.xcframework`.
+
 ## Version 0.9.2
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/175948/YandexMobileMetricaPush-0.9.2-ios-d8224e1b-10ac-4bdc-8c1b-498370d10714.zip)
 
