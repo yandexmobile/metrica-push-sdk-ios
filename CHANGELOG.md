@@ -1,5 +1,10 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 1.1.1
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetricaPush-1.1.1-ios-6c0bd32e-820c-4c3d-b17b-bdea7e5b546f.zip)
+
+* Update AppMetrica SDK dependency to 4.0
+
 ## Version 1.0.0
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/128534/YandexMobileMetricaPush-1.0.0-ios-11df8ee2-df87-4f7f-a7b1-1c0718953680.zip)
 

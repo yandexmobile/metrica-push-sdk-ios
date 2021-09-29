@@ -17,15 +17,15 @@ let package = Package(
         .package(
             name:"YandexMobileMetrica",
             url: "https://github.com/yandexmobile/metrica-sdk-ios.git",
-            "3.14.0" ..< "4.0.0"
+            "4.0.0" ..< "5.0.0"
         )
     ],
     
     targets: [
         .binaryTarget(
             name: "YandexMobileMetricaPush",
-            url: "https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/117488/YandexMobileMetricaPush-1.0.0-ios-spm-443d80c4-d02f-4fd5-9c25-70e5cf81bf88.zip",
-            checksum: "68332fc87f5ace5ef135c859f9e095679370ef7df4026c0d807fc944ffa85d1f"
+            url: "https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-1.1.1-ios-spm-4ec3f510-c05b-467e-89ca-51b8151fc015.zip",
+            checksum: "15c2183082fe2724e5818f5b62fffa37e6780413edd5076841691b8133166242"
         ),
         .target(
             name: "YandexMobileMetricaPushWrapper",

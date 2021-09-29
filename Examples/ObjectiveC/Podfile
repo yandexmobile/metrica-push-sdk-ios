@@ -3,7 +3,7 @@ platform :ios, '9.0'
 
 target 'YandexMobileMetricaPushSampleObjC' do
 
-    pod 'YandexMobileMetrica', '~> 3.4'
+    pod 'YandexMobileMetrica', '~> 4.0'
     pod 'YandexMobileMetricaPush'
 
 end
@@ -12,4 +12,14 @@ target 'YandexMobileMetricaPushNotificationServiceExtenstionSampleObjC' do
 
     pod 'YandexMobileMetricaPush'
 
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        # In case of `Multiple commands produce .../XCFrameworkIntermediates/YandexMobileMetrica` problem
+        if target.name == 'YandexMobileMetrica-Static_Core'
+            target.remove_from_project
+        end
+        installer.pods_project.save()
+    end
 end
