@@ -24,8 +24,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "YandexMobileMetricaPush",
-            url: "https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/50347/YandexMobileMetricaPush-1.1.1-ios-spm-4ec3f510-c05b-467e-89ca-51b8151fc015.zip",
-            checksum: "15c2183082fe2724e5818f5b62fffa37e6780413edd5076841691b8133166242"
+            url: "https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetricaPush-1.3.0-ios-spm-98ad2354-b91a-4b46-a627-c23939d0f1b9.zip",
+            checksum: "ec17e741cd2def306de0e57c40b4e24ef371179b29496e2bee36adf476001c3c"
         ),
         .target(
             name: "YandexMobileMetricaPushWrapper",

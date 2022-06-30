@@ -1,5 +1,10 @@
 # Yandex AppMetrica Push SDK Change Log
 
+## Version 1.3.0
+SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/128534/YandexMobileMetricaPush-1.3.0-ios-43d9ba9b-a804-42d3-ad64-65a6daf1dc1c.zip)
+
+* Added `+handleSceneWillConnectToSessionWithOptions:` method for Push notification handling with `UISceneDelegate` (iOS 13+).
+
 ## Version 1.1.1
 SDK archive: [**download**](https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetricaPush-1.1.1-ios-6c0bd32e-820c-4c3d-b17b-bdea7e5b546f.zip)
 
