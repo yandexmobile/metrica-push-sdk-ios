@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7299640F286EF7B50022AFBA /* SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299640E286EF7B50022AFBA /* SwiftUIApp.swift */; };
+		72996411286EF7B50022AFBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72996410286EF7B50022AFBA /* ContentView.swift */; };
+		72996413286EF7B70022AFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72996412286EF7B70022AFBA /* Assets.xcassets */; };
+		72996416286EF7B70022AFBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72996415286EF7B70022AFBA /* Preview Assets.xcassets */; };
+		7299641E286EF9730022AFBA /* YandexMobileMetricaPush in Frameworks */ = {isa = PBXBuildFile; productRef = 7299641D286EF9730022AFBA /* YandexMobileMetricaPush */; };
+		72996420286EFB0B0022AFBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299641F286EFB0B0022AFBA /* AppDelegate.swift */; };
+		72996422286F095B0022AFBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72996421286F095B0022AFBA /* SceneDelegate.swift */; };
+		7299642B286F0FC30022AFBA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299642A286F0FC30022AFBA /* NotificationService.swift */; };
+		7299642F286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72996428286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7299642D286F0FC30022AFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72996403286EF7B50022AFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72996427286F0FC30022AFBA;
+			remoteInfo = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72996433286F0FC30022AFBA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7299642F286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7299640B286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMobileMetricaPushSampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7299640E286EF7B50022AFBA /* SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApp.swift; sourceTree = "<group>"; };
+		72996410286EF7B50022AFBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72996412286EF7B70022AFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72996415286EF7B70022AFBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7299641F286EFB0B0022AFBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72996421286F095B0022AFBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72996423286F0A0B0022AFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		72996428286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7299642A286F0FC30022AFBA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		7299642C286F0FC30022AFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72996408286EF7B50022AFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7299641E286EF9730022AFBA /* YandexMobileMetricaPush in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72996425286F0FC30022AFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72996402286EF7B50022AFBA = {
+			isa = PBXGroup;
+			children = (
+				7299640D286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI */,
+				72996429286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI */,
+				7299640C286EF7B50022AFBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7299640C286EF7B50022AFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7299640B286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI.app */,
+				72996428286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7299640D286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7299641F286EFB0B0022AFBA /* AppDelegate.swift */,
+				72996421286F095B0022AFBA /* SceneDelegate.swift */,
+				7299640E286EF7B50022AFBA /* SwiftUIApp.swift */,
+				72996410286EF7B50022AFBA /* ContentView.swift */,
+				72996412286EF7B70022AFBA /* Assets.xcassets */,
+				72996423286F0A0B0022AFBA /* Info.plist */,
+				72996414286EF7B70022AFBA /* Preview Content */,
+			);
+			path = YandexMobileMetricaPushSampleSwiftUI;
+			sourceTree = "<group>";
+		};
+		72996414286EF7B70022AFBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72996415286EF7B70022AFBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72996429286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7299642A286F0FC30022AFBA /* NotificationService.swift */,
+				7299642C286F0FC30022AFBA /* Info.plist */,
+			);
+			path = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7299640A286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72996419286EF7B70022AFBA /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushSampleSwiftUI" */;
+			buildPhases = (
+				72996407286EF7B50022AFBA /* Sources */,
+				72996408286EF7B50022AFBA /* Frameworks */,
+				72996409286EF7B50022AFBA /* Resources */,
+				72996433286F0FC30022AFBA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7299642E286F0FC30022AFBA /* PBXTargetDependency */,
+			);
+			name = YandexMobileMetricaPushSampleSwiftUI;
+			packageProductDependencies = (
+				7299641D286EF9730022AFBA /* YandexMobileMetricaPush */,
+			);
+			productName = YandexMobileMetricaPushSampleSwiftUI;
+			productReference = 7299640B286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72996427286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72996430286F0FC30022AFBA /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI" */;
+			buildPhases = (
+				72996424286F0FC30022AFBA /* Sources */,
+				72996425286F0FC30022AFBA /* Frameworks */,
+				72996426286F0FC30022AFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+			productName = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+			productReference = 72996428286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72996403286EF7B50022AFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					7299640A286EF7B50022AFBA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					72996427286F0FC30022AFBA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 72996406286EF7B50022AFBA /* Build configuration list for PBXProject "YandexMobileMetricaPushSampleSwiftUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72996402286EF7B50022AFBA;
+			packageReferences = (
+				7299641C286EF9730022AFBA /* XCRemoteSwiftPackageReference "metrica-push-sdk-ios" */,
+			);
+			productRefGroup = 7299640C286EF7B50022AFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7299640A286EF7B50022AFBA /* YandexMobileMetricaPushSampleSwiftUI */,
+				72996427286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72996409286EF7B50022AFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72996416286EF7B70022AFBA /* Preview Assets.xcassets in Resources */,
+				72996413286EF7B70022AFBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72996426286F0FC30022AFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72996407286EF7B50022AFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72996420286EFB0B0022AFBA /* AppDelegate.swift in Sources */,
+				72996411286EF7B50022AFBA /* ContentView.swift in Sources */,
+				7299640F286EF7B50022AFBA /* SwiftUIApp.swift in Sources */,
+				72996422286F095B0022AFBA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72996424286F0FC30022AFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7299642B286F0FC30022AFBA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7299642E286F0FC30022AFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72996427286F0FC30022AFBA /* YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI */;
+			targetProxy = 7299642D286F0FC30022AFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		72996417286EF7B70022AFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72996418286EF7B70022AFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7299641A286EF7B70022AFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YandexMobileMetricaPushSampleSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YandexMobileMetricaPushSampleSwiftUI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7299641B286EF7B70022AFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YandexMobileMetricaPushSampleSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YandexMobileMetricaPushSampleSwiftUI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72996431286F0FC30022AFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-swiftui.YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72996432286F0FC30022AFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yandex.mobile.metrica.push.sample-swiftui.YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72996406286EF7B50022AFBA /* Build configuration list for PBXProject "YandexMobileMetricaPushSampleSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72996417286EF7B70022AFBA /* Debug */,
+				72996418286EF7B70022AFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72996419286EF7B70022AFBA /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushSampleSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7299641A286EF7B70022AFBA /* Debug */,
+				7299641B286EF7B70022AFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72996430286F0FC30022AFBA /* Build configuration list for PBXNativeTarget "YandexMobileMetricaPushNotificationServiceExtenstionSampleSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72996431286F0FC30022AFBA /* Debug */,
+				72996432286F0FC30022AFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7299641C286EF9730022AFBA /* XCRemoteSwiftPackageReference "metrica-push-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yandexmobile/metrica-push-sdk-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7299641D286EF9730022AFBA /* YandexMobileMetricaPush */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7299641C286EF9730022AFBA /* XCRemoteSwiftPackageReference "metrica-push-sdk-ios" */;
+			productName = YandexMobileMetricaPush;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 72996403286EF7B50022AFBA /* Project object */;
+}
